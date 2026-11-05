@@ -8207,7 +8207,7 @@ function createAccounts({storage}){
  };
  return {
   localOnly:true,client,view:{busy:false},
-  button:()=>'<button class="player-button local-progress-button" data-action="settings" title="进度只保存在当前浏览器，点击导出备份" aria-label="本机进度：查看保存说明和备份"><span class="player-avatar" aria-hidden="true">↓</span><span>本机进度<small>免登录 · 自动保存</small></span></button>',
+  button:()=>'',
   // Shared UI handlers have no account destination in a static deployment.
   action:async name=>name.startsWith('account-'),input(){},submitForm:async()=>false,
   modal:()=>'',managementModal:()=>'',admin:()=>''
